@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailor Shop CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Tailor Shop – CRUD System</h1>
+
+    <div class="container">
+        <form id="orderForm">
+            <input type="hidden" id="orderId">
+
+            <label>Customer Name</label>
+            <input type="text" id="customerName" required>
+
+            <label>Cloth Type</label>
+            <input type="text" id="clothType" required>
+
+            <label>Measurement</label>
+            <input type="text" id="measurement" required>
+
+            <label>Delivery Date</label>
+            <input type="date" id="deliveryDate" required>
+
+            <button type="submit" id="submitBtn">Add Order</button>
+        </form>
+
+        <h2>Orders List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Cloth</th>
+                    <th>Measurement</th>
+                    <th>Delivery</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="orderTable"></tbody>
+        </table>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
